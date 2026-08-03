@@ -1,0 +1,24 @@
+.hero {
+    position: relative;
+    height: 1000px;
+}
+
+.light {
+    height: 500px;
+    --x: 50%;
+    --y: 50%;
+    position: relative;
+    top: 0;
+    background: radial-gradient(
+        500px circle at var(--x) var(--y),
+        rgba(100, 200, 200, 0.15),
+        transparent 10%
+    );
+}
+
+.name {
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+
+}
