@@ -11,6 +11,14 @@ Currently, two official plugins are available:
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
+## Effects & Components
+
+This project uses **React Bits** component library for visual effects:
+- [SideRays-JS-CSS](https://www.reactbits.com/components/side-rays-js-css) - Light rays effect
+- [LightRays-JS-CSS](https://www.reactbits.com/components/light-rays-js-css) - Ambient light effect
+
+These components were integrated via [shadcn/ui](https://ui.shadcn.com/). No custom effects were coded manually.
+
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
