@@ -1,27 +1,43 @@
 .hero {
     position: relative;
-    height: 1000px;
+    height: 100vh;
+}
+
+.hero-div {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .name h1 {
-    font-size: 120px;
+    font-size: 145px;
     color: white;
     font-weight: bolder;
     line-height: 1.1;
-}
+} 
+
 
 .name {
-    left: 20%;
+    transform: translate(-50%, -50%);
     top: 50%;
+    left: 50%;
     position: absolute;
     font-weight: bolder;
 
 }
 
 .left-bra {
-    color: blue;
+    color: #0000ff;
 }
 
 .right-bra {
     color: blue;
 }
+/* 
+.infos h1 {
+    top: 50%;
+} 
+ 
+.infos {
+    top: 50%;
+} */

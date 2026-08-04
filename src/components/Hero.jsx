@@ -1,11 +1,18 @@
 import React from 'react';
 import './Hero.css';
 import LightRays from './LightRays';
+import SpecularButton from './SpecularButton';
+import SplitText from './SplitText';
+import DepthText from './DepthText';
+
+const handleAnimationComplete = () => {
+    console.log('All leters have animated!');
+};
 
 const Hero = () => {
     return (
         <section className='hero'>
-            <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+            <div className='hero-div'>
                 <LightRays
                 raysOrigin="top-center"
                 raysColor="#ffffff"
@@ -21,9 +28,63 @@ const Hero = () => {
                 fadeDistance={1}
                 saturation={2}
                 />
+                {/* <DepthText
+                text="<Rayan SAMA/>"
+                layers={34}
+                depth={2.4}
+                faceColor="#f8fafc"
+                depthColor="#0000ff"
+                tilt={7.5}
+                pointerTracking
+                smoothing={0.14}
+                perspective={900}
+                autoOrbit
+                orbitSpeed={0.35}
+                fontSize="clamp(3rem, 12vw, 7rem)"
+                fontWeight={900}
+                shadow
+                /> */}
+                {/* <SplitText
+                text="Hello, you!!"
+                className="text-2xl font-semibold text-center"
+                delay={50}
+                duration={1.25}
+                ease="power3.out"
+                splitType="words"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="center"
+                onLetterAnimationComplete={handleAnimationComplete}
+                showCallback
+                /> */}
                 <div className='name'>
                     <h1><span className='left-bra'>{'<'}</span>Rayan<br />&nbsp;&nbsp;SAMA<span className='right-bra'>{'/>'}</span></h1>
                 </div>
+                {/* <div className='infos'>
+                    <SpecularButton
+                    size="lg"
+                    radius={18}
+                    tint="#ffffff"
+                    tintOpacity={0}
+                    blur={0}
+                    textColor="#f5f5f5"
+                    lineColor="#0000ff"
+                    baseColor="#ffffff"
+                    intensity={1}
+                    shineSize={23}
+                    shineFade={51}
+                    thickness={1}
+                    speed={0.35}
+                    followMouse
+                    proximity={250}
+                    autoAnimate
+                    onClick={() => console.log('clicked')}
+                    >
+                        Get Started
+                    </SpecularButton>
+                </div> */}
             </div>
         </section>
     );
